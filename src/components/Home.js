@@ -67,7 +67,7 @@ const Home = () => {
         <div className="md:mx-10">
           <p
             style={{ fontFamily: "Georgia" }}
-            className="text-3xl md:text-4xl px-4 text-center font-bold text-black  py-2"
+            className="text-3xl md:text-4xl px-0 md:px-4 text-center font-bold text-black  py-2"
           >
             REAP THE BENEFITS!
           </p>
@@ -219,7 +219,7 @@ const Home = () => {
         <div className="container text-center mx-auto py-10 px-4">
           <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="mb-6  md:mb-0 md:w-1/2 flex justify-center md:justify-start">
-              <img src={footerlogo} className="h-96 w-96" alt="Footer Logo" />
+              <img src={footerlogo} className="h-[20rem] w-[20rem] md:h-[30rem] md:w-[30rem]" alt="Footer Logo" />
             </div>
 
             <div className="md:w-2/3  text-center md:text-left">
