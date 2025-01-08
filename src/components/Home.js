@@ -8,13 +8,14 @@ import icon1 from "../assets/icon1.png";
 import icon2 from "../assets/icon2.png";
 import icon3 from "../assets/icon3.png";
 import footerlogo from "../assets/footerlogo.png";
-import logo2 from "../assets/logo2.png"
+import logo2 from "../assets/logo2.png";
+import navbg from "../assets/bgnav.png"
 
 const Home = () => {
   return (
     <div>
-      <div className="shadow-sm p-2 flex items-center justify-center">
-        <img src={logo} className="h-16 w-52" alt="#" />
+      <div  className="shadow-sm  p-1 flex items-center justify-center">
+        <img src={logo} className="h-20 w-20 " alt="#" />
       </div>
 
       <div className="relative ">
@@ -40,7 +41,7 @@ const Home = () => {
           </p>
           <p
             style={{ fontFamily: "Georgia" }}
-            className="text-lg md:text-2xl text-red-600 font-bold py-1"
+            className="text-lg md:text-2xl text-orange-600 font-bold py-1"
           >
             STARTING AT $59 FOR DOMESTIC FLIGHTS
           </p>
@@ -54,7 +55,7 @@ const Home = () => {
             <a href="tel:+1234567890">
               <button
                 style={{ fontFamily: "Georgia" }}
-                className="bg-red-600 p-3 text-sm  px-6 font-medium rounded-lg text-white"
+                className="bg-orange-600 p-3 text-sm transform transition-transform duration-300 hover:scale-105   px-6 font-medium rounded-lg text-white"
               >
                 BOOK YOUR FLIGHT TODAY
               </button>
@@ -97,7 +98,7 @@ const Home = () => {
             </p>
             <div className="mt-2">
               <a href="tel:+1234567890">
-                <button className="bg-red-600 p-2 text-xs md:text-sm px-8 md:px-12  font-medium rounded-lg text-white">
+                <button className="bg-orange-600 transform transition-transform duration-300 hover:scale-105  p-2 text-xs md:text-sm px-8 md:px-12  font-medium rounded-lg text-white">
                   BOOK YOUR FLIGHT TODAY
                   <p className=" text-gray-100">Call Now: +1234567890</p>
                 </button>
@@ -118,7 +119,7 @@ const Home = () => {
             <p className="font-medium">Hawali</p>
             <span className="mx-2">|</span>{" "}
             {/* This adds a separator between the two text elements */}
-            <p className="text-red-600 font-bold">$400 Roundtrip</p>
+            <p className="text-orange-600 font-bold">$400 Roundtrip</p>
           </div>
         </div>
 
@@ -132,7 +133,7 @@ const Home = () => {
             <p className="font-medium">Bali</p>
             <span className="mx-2">|</span>{" "}
             {/* This adds a separator between the two text elements */}
-            <p className="text-red-600 font-bold">$225 Roundtrip</p>
+            <p className="text-orange-600 font-bold">$225 Roundtrip</p>
           </div>
         </div>
 
@@ -146,7 +147,7 @@ const Home = () => {
             <p className="font-medium">Croatia</p>
             <span className="mx-2">|</span>{" "}
             {/* This adds a separator between the two text elements */}
-            <p className="text-red-600 font-bold">$350 Roundtrip</p>
+            <p className="text-orange-600 font-bold">$350 Roundtrip</p>
           </div>
         </div>
       </div>
@@ -157,10 +158,10 @@ const Home = () => {
             style={{ fontFamily: "Georgia" }}
             className="text-3xl md:text-4xl px-4 text-center font-bold text-black  py-2"
           >
-            HOW DOES CHEAP FLIGHTS WORK?
+            HOW DOES CHEAFLIGHT WORK?
           </p>
           <p className="text-lg  mt-2 mx-2 text-gray-500 text-center font-semibold">
-            With our secure flight routing database and hundreds of unpublished
+            With our secure flight routing database and hundoranges of unpublished
             deals, we aim to make finding the very best flight rate easy and
             efficient.
           </p>
@@ -188,7 +189,7 @@ const Home = () => {
               style={{ fontFamily: "Georgia" }}
               className="text-gray-600 mt-2 text-sm"
             >
-              OUR SYSTEM SCANS THOUSANDS OF DATABASES FOR THE CHEAPEST FLIGHT
+              OUR SYSTEM SCANS THOUSANDS OF DATABASES FOR THE CHEAFLIGHT
               DEALS .
             </p>
           </div>
@@ -208,7 +209,7 @@ const Home = () => {
         </div>
         <div style={{ fontFamily: "Georgia" }} className="text-center mt-8">
           <a href="tel:+1234567890">
-            <button className="bg-red-600 p-3 text-md  px-16 font-medium rounded-lg text-white">
+            <button className="bg-orange-600 transform transition-transform duration-300 hover:scale-105  p-3 text-md  px-16 font-medium rounded-lg text-white">
               GET A QUOTE
             </button>
           </a>
@@ -216,7 +217,7 @@ const Home = () => {
       </div>
 
       <div className="bg-blue-950 text-white mt-10">
-        <div className="container text-center mx-auto py-10 px-4">
+        <div className="container text-center mx-auto py-10  px-4">
           <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="mb-6  md:mb-0 md:w-1/2 flex justify-center md:justify-start">
               <img src={footerlogo} className="h-[20rem] w-[20rem] md:h-[30rem] md:w-[30rem]" alt="Footer Logo" />
@@ -233,7 +234,7 @@ const Home = () => {
                 style={{ fontFamily: "Georgia" }}
                 className="mb-4 text-sm md:text-base py-3 md:py-2"
               >
-                Looking for an affordable getaway? Cheap Flights can help! We
+                Looking for an affordable getaway? Cheaflight can help! We
                 specialize in finding the best rates for flights so you can
                 spend your hard-earned money on other things. Plus, we make
                 booking your ticket very easy, so what are you waiting for? Give
@@ -257,7 +258,7 @@ const Home = () => {
                 <a href="tel:+1234567890">
                   <button
                     style={{ fontFamily: "Georgia" }}
-                    className="bg-red-600 p-4 text-sm  px-6 font-medium rounded-lg text-white"
+                    className="bg-orange-600 transform transition-transform duration-300 hover:scale-105  p-4 text-sm  px-6 font-medium rounded-lg text-white"
                   >
                     BOOK YOUR FLIGHT TODAY
                   </button>
@@ -275,7 +276,7 @@ const Home = () => {
        
         <div className="text-center mt-2 md:mt-0">
           <div className="flex items-center justify-center mb-4">
-            <img src={logo2} className="h-[7rem] w-[24rem]" alt=""/>
+            <img src={logo} className="h-[7rem] w-[7rem]" alt=""/>
             
            
           </div>
@@ -283,21 +284,21 @@ const Home = () => {
             Looking for an affordable getaway?
           </h1>
           <p className="mt-2 text-sm">
-            Cheap Flights can help! We specialize in finding the best rates for
+            Cheaflight can help! We specialize in finding the best rates for
             flights so you can spend your hard-earned money on other things.
             Plus, we make booking easy and stress-free. So what are you waiting
             for?
           </p>
-          <p   style={{ fontFamily: "Georgia" }} className="mt-4 font-bold text-red-500">Give us a try today!</p>
+          <p   style={{ fontFamily: "Georgia" }} className="mt-4 font-bold text-orange-600">Give us a try today!</p>
         </div>
 
    
         <div className="mt-5 text-gray-400 text-sm text-center md:mx-10">
           <p>
-            <strong>Disclaimer:</strong> Cheap Flights US is a referral source
+            <strong>Disclaimer:</strong> Cheaflight US is a referral source
             that provides information and access to a helpline to match
             consumers with companies that may provide certain flight details to
-            them. Cheap Flights US does not promise a specific outcome or the
+            them. Cheaflight US does not promise a specific outcome or the
             results you may achieve by calling the helpline. The helpline is
             free to call but the services or programs that you pursue may have
             costs associated with them.
