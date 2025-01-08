@@ -8,14 +8,24 @@ import icon1 from "../assets/icon1.png";
 import icon2 from "../assets/icon2.png";
 import icon3 from "../assets/icon3.png";
 import footerlogo from "../assets/footerlogo.png";
-import logo2 from "../assets/logo2.png";
-import navbg from "../assets/bgnav.png"
+import call from "../assets/call.png";
+import img4 from "../assets/img4.png";
+import img5 from "../assets/img5.jpg";
+
 
 const Home = () => {
   return (
     <div>
-      <div  className="shadow-sm  p-1 flex items-center justify-center">
-        <img src={logo} className="h-20 w-20 " alt="#" />
+      <div className="shadow-sm  p-1 flex items-center justify-between ">
+        <div className=" px-1 md:px-5">
+          <img src={logo} className="md:h-16 md:w-16 h-12 w-12" alt="#" />
+        </div>
+        <div className="bg-white rounded-full flex justify-center items-center gap-x-2 px-2 md:px-10">
+          <img src={call} className="h-8 w-8" alt="#" />
+          <p style={{ fontFamily: "Georgia" }} className="font-semibold">
+            +123456789
+          </p>
+        </div>
       </div>
 
       <div className="relative ">
@@ -70,7 +80,7 @@ const Home = () => {
             style={{ fontFamily: "Georgia" }}
             className="text-3xl md:text-4xl px-0 md:px-4 text-center font-bold text-black  py-2"
           >
-            REAP THE BENEFITS!
+            THE BENEFITS!
           </p>
           <p className="text-lg  mt-2 mx-2 text-gray-500 text-center font-semibold">
             People love our Platform because its so easy to use and has so many
@@ -109,47 +119,50 @@ const Home = () => {
       </div>
 
       <div className="mt-10 md:mt-12 flex flex-wrap md:flex-nowrap items-center justify-center mx-4 md:mx-0 md:gap-x-14">
-        <div className="relative  w-full sm:w-auto">
+      <div className="relative mt-8 md:mt-0  w-full sm:w-auto">
           <img
             src={img1}
-            className="h-[33rem] md:h-[30rem] w-full sm:w-96 transform transition-transform duration-300 ease-out md:hover:scale-105"
-            alt="img"
-          />
-          <div className="absolute bottom-2 flex justify-center items-center text-black bg-white w-full bg-opacity-100 p-2">
-            <p className="font-medium">Hawali</p>
-            <span className="mx-2">|</span>{" "}
-            {/* This adds a separator between the two text elements */}
-            <p className="text-orange-600 font-bold">$400 Roundtrip</p>
-          </div>
-        </div>
-
-        <div className="relative mt-8 md:mt-0 w-full sm:w-auto">
-          <img
-            src={img2}
-            className="h-[33rem] md:h-[30rem]  w-full sm:w-96 transform transition-transform duration-300 ease-out md:hover:scale-105"
-            alt="img"
-          />
-          <div className="absolute bottom-2 flex justify-center items-center text-black bg-white w-full bg-opacity-100 p-2">
-            <p className="font-medium">Bali</p>
-            <span className="mx-2">|</span>{" "}
-            {/* This adds a separator between the two text elements */}
-            <p className="text-orange-600 font-bold">$225 Roundtrip</p>
-          </div>
-        </div>
-
-        <div className="relative mt-8 md:mt-0  w-full sm:w-auto">
-          <img
-            src={img3}
-            className="h-[33rem] md:h-[30rem]  w-full sm:w-96 transform transition-transform duration-300 ease-out md:hover:scale-105 "
+            className="h-[33rem] md:h-[30rem] rounded-lg object-cover w-full sm:w-96 transform transition-transform duration-300 ease-out md:hover:scale-105 "
             alt="img"
           />
           <div className="absolute bottom-2 flex justify-center items-center text-black bg-white w-full bg-opacity-100 p-2">
             <p className="font-medium">Croatia</p>
             <span className="mx-2">|</span>{" "}
-            {/* This adds a separator between the two text elements */}
+      
             <p className="text-orange-600 font-bold">$350 Roundtrip</p>
           </div>
         </div>
+
+        <div className="relative mt-8 md:mt-0 w-full sm:w-auto">
+          <img
+            src={img5}
+            className="h-[33rem] object-cover rounded-lg md:h-[30rem]  w-full sm:w-96 transform transition-transform duration-300 ease-out md:hover:scale-105"
+            alt="img"
+          />
+          <div className="absolute bottom-2 flex justify-center items-center text-black bg-white w-full bg-opacity-100 p-2">
+            <p className="font-medium">Bali</p>
+            <span className="mx-2">|</span>{" "}
+       
+            <p className="text-orange-600 font-bold">$225 Roundtrip</p>
+          </div>
+        </div>
+
+        <div className="relative  w-full sm:w-auto">
+          <img
+            src={img3}
+            className="h-[33rem] object-cover rounded-lg md:h-[30rem] w-full sm:w-96 transform transition-transform duration-300 ease-out md:hover:scale-105"
+            alt="img"
+          />
+          <div className="absolute bottom-2 flex justify-center items-center text-black bg-white w-full bg-opacity-100 p-2">
+            <p className="font-medium">Hawali</p>
+            <span className="mx-2">|</span>{" "}
+         
+            <p className="text-orange-600 font-bold">$400 Roundtrip</p>
+          </div>
+        </div>
+
+       
+
       </div>
 
       <div className="mt-10">
@@ -161,9 +174,9 @@ const Home = () => {
             HOW DOES CHEAFLIGHT WORK?
           </p>
           <p className="text-lg  mt-2 mx-2 text-gray-500 text-center font-semibold">
-            With our secure flight routing database and hundoranges of unpublished
-            deals, we aim to make finding the very best flight rate easy and
-            efficient.
+            With our secure flight routing database and hundoranges of
+            unpublished deals, we aim to make finding the very best flight rate
+            easy and efficient.
           </p>
         </div>
 
@@ -189,8 +202,7 @@ const Home = () => {
               style={{ fontFamily: "Georgia" }}
               className="text-gray-600 mt-2 text-sm"
             >
-              OUR SYSTEM SCANS THOUSANDS OF DATABASES FOR THE CHEAFLIGHT
-              DEALS .
+              OUR SYSTEM SCANS THOUSANDS OF DATABASES FOR THE CHEAFLIGHT DEALS .
             </p>
           </div>
           <div className="mb-8 md:mb-0 p-6 shadow-sm border border-gray-100">
@@ -220,7 +232,11 @@ const Home = () => {
         <div className="container text-center mx-auto py-10  px-4">
           <div className="flex flex-col md:flex-row items-center md:items-start">
             <div className="mb-6  md:mb-0 md:w-1/2 flex justify-center md:justify-start">
-              <img src={footerlogo} className="h-[20rem] w-[20rem] md:h-[30rem] md:w-[30rem]" alt="Footer Logo" />
+              <img
+                src={footerlogo}
+                className="h-[20rem] w-[20rem] md:h-[30rem] md:w-[30rem]"
+                alt="Footer Logo"
+              />
             </div>
 
             <div className="md:w-2/3  text-center md:text-left">
@@ -272,15 +288,15 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-black py-5 md:py-14  text-white  flex flex-col items-center justify-center px-6 md:px-4">
-       
+      <div className="bg-black py-5 md:py-10  text-white  flex flex-col items-center justify-center px-6 md:px-4">
         <div className="text-center mt-2 md:mt-0">
           <div className="flex items-center justify-center mb-4">
-            <img src={logo} className="h-[7rem] w-[7rem]" alt=""/>
-            
-           
+            <img src={logo} className="h-[7rem] w-[7rem]" alt="" />
           </div>
-          <h1   style={{ fontFamily: "Georgia" }} className="text-3xl font-semibold">
+          <h1
+            style={{ fontFamily: "Georgia" }}
+            className="text-3xl font-semibold"
+          >
             Looking for an affordable getaway?
           </h1>
           <p className="mt-2 text-sm">
@@ -289,19 +305,23 @@ const Home = () => {
             Plus, we make booking easy and stress-free. So what are you waiting
             for?
           </p>
-          <p   style={{ fontFamily: "Georgia" }} className="mt-4 font-bold text-orange-600">Give us a try today!</p>
+          <p
+            style={{ fontFamily: "Georgia" }}
+            className="mt-4 font-bold text-orange-600"
+          >
+            Give us a try NOW!
+          </p>
         </div>
 
-   
         <div className="mt-5 text-gray-400 text-sm text-center md:mx-10">
           <p>
-            <strong>Disclaimer:</strong> Cheaflight US is a referral source
-            that provides information and access to a helpline to match
-            consumers with companies that may provide certain flight details to
-            them. Cheaflight US does not promise a specific outcome or the
-            results you may achieve by calling the helpline. The helpline is
-            free to call but the services or programs that you pursue may have
-            costs associated with them.
+            <strong>Disclaimer:</strong> Cheaflight US is a referral source that
+            provides information and access to a helpline to match consumers
+            with companies that may provide certain flight details to them.
+            Cheaflight US does not promise a specific outcome or the results you
+            may achieve by calling the helpline. The helpline is free to call
+            but the services or programs that you pursue may have costs
+            associated with them.
           </p>
           <p className="mt-2">
             <strong>TCPA DISCLOSURE:</strong> By clicking the CALL or SUBMIT
@@ -331,6 +351,59 @@ const Home = () => {
             You may opt-out of any future contact via text message by replying
             anytime with STOP.
           </p>
+        </div>
+      </div>
+
+      <div   style={{ fontFamily: "Georgia" }} className="bg-black py-5 pb-10 text-white px-6 md:px-20">
+  
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 gap-x-44">
+          {/* Top Domestic Destinations */}
+          <div>
+            <h3 className="font-bold text-lg mb-3">
+              Top Domestic Destinations
+            </h3>
+            <ul className="space-y-1">
+              <li>New York City</li>
+              <li>Orlando</li>
+              <li>Atlanta</li>
+              <li>Chicago</li>
+              <li>Washington</li>
+              <li>San Francisco</li>
+              <li>Los Angeles</li>
+              <li>Miami</li>
+              <li>Las Vegas</li>
+            </ul>
+          </div>
+
+          {/* Top International Destinations */}
+          <div>
+            <h3 className="font-bold text-lg mb-3">
+              Top International Destinations
+            </h3>
+            <ul className="space-y-1">
+              <li>Dublin</li>
+              <li>Amsterdam</li>
+              <li>Athens</li>
+              <li>Rome</li>
+              <li>Dubai</li>
+              <li>London</li>
+              <li>Paris</li>
+              <li>Singapore</li>
+              <li>Malaysia</li>
+
+            </ul>
+          </div>
+
+          {/* Reach Us */}
+          <div>
+            <h3 className="font-bold text-lg mb-3">Reach Us</h3>
+            <p>Cheaflight.com</p>
+            <p>2500 Main Street</p>
+            <p>Suite 300</p>
+            <p>Dallas,TX 75201, USA.</p>
+            <p className="font-bold mt-3">24/7 Number</p>
+            <p>+123456789</p>
+          </div>
         </div>
       </div>
     </div>
